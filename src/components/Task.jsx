@@ -18,7 +18,7 @@ export const Task = ({task, handleTaskClick,handleTaskDelete}) => {
 
             
             <div className='task-title' onClick={() => handleTaskClick(task.id)}>
-                <FaArrowUp style={{position: "relative", left:"0", top:"3px", marginRight:"10px", cursor:"pointer", color:"chartreuse", opacity:"0.4"}}></FaArrowUp>
+                
                 {task.title}
             </div>
 
