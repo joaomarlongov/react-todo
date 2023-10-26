@@ -20,3 +20,13 @@
     font-size: 16px;
     cursor: pointer;
 }
+
+.remove-task-button:hover{
+    color: rgb(81, 161, 0);
+    transition: all .2s ease-in;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: flex-end;
+}

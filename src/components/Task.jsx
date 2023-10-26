@@ -1,6 +1,7 @@
 import './Task.css'
-import { FaEllipsisH, FaArrowUp, FaTrash } from 'react-icons/fa'
+import { FaArrowUp, FaTrash } from 'react-icons/fa'
 import { useHistory } from "react-router-dom";
+import { FaCircleInfo } from "react-icons/fa6";
 
 
 export const Task = ({task, handleTaskClick,handleTaskDelete}) => {
@@ -25,10 +26,10 @@ export const Task = ({task, handleTaskClick,handleTaskDelete}) => {
             
 
             <div className="btn-container">
-            <FaEllipsisH onClick={handleTaskDetailsClick} style={{color:"chartreuse", cursor:"pointer"}}>
+            <FaCircleInfo onClick={handleTaskDetailsClick} style={{color:"chartreuse", cursor:"pointer"}}>
 
-            </FaEllipsisH>
-            <button className='remove-task-button' onClick={() => handleTaskDelete(task.id)}><FaTrash/>
+            </FaCircleInfo>
+            <button className='remove-task-button' onClick={() => handleTaskDelete(task.id)}><FaTrash style={{marginTop:"4px"}}/>
             </button>
             </div>
 
